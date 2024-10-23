@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from './ui/button';
+import logo from '../images/logo.webp';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ const Header: React.FC = () => {
       scrollY > 0 ? 'shadow-md' : ''
     }`}>
       <Link to="/" className="flex items-center justify-center">
-        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo_0000270108-CyYL045jtAullPoGKNMqmzvNL0xPG0.webp" alt="LIVソフトロゴ" className="w-10 h-10" />
+        <img src={logo} alt="ロゴ" className="w-10 h-10" />
         <span className="ml-2 text-lg font-bold text-[#37DC94]">株式会社LIVソフト</span>
       </Link>
       <nav className={`ml-auto ${isMenuOpen ? 'flex' : 'hidden'} md:flex flex-col md:flex-row absolute md:relative top-16 md:top-0 left-0 w-full md:w-auto bg-white md:bg-transparent p-4 md:p-0 gap-4 sm:gap-6 border-t md:border-t-0 transition-all duration-300 ease-in-out`}>
@@ -31,7 +32,7 @@ const Header: React.FC = () => {
         <Link to="/company" className="text-sm font-medium hover:text-[#162C9B] focus:outline-none focus:ring-2 focus:ring-[#37DC94] rounded-md p-2 transition-colors duration-200">
           会社情報
         </Link>
-        <Link to="/contact" className="text-sm font-medium hover:text-[#162C9B] focus:outline-none focus:ring-2 focus:ring-[#37DC94] rounded-md p-2 transition-colors duration-200">
+        <Link to="https://forms.gle/Qdjgy9VvgF54sGpG9" className="text-sm font-medium hover:text-[#162C9B] focus:outline-none focus:ring-2 focus:ring-[#37DC94] rounded-md p-2 transition-colors duration-200">
           お問い合わせ
         </Link>
       </nav>

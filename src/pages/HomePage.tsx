@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Settings, Monitor, Server } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
+import bgImage from '../images/bg.png';
 
 const HomePage: React.FC = () => {
   return (
-    <div className="bg-white text-gray-800 font-sans">
+    <div className="bg-white text-gray-800 font-sans" style={{ backgroundImage: `url(${bgImage})` }}>
       <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-br from-[#37DC94] to-[#162C9B] relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bg-dKWDpSwWHMx2ZSvVUvaRdINWmgF4u6.png')] bg-cover bg-center opacity-50"></div>
         <div className="container px-4 md:px-6 relative z-10">
@@ -21,7 +22,7 @@ const HomePage: React.FC = () => {
             </div>
             <div className="space-x-4">
               <Button asChild className="bg-white text-[#37DC94] hover:bg-[#FF5126] hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#37DC94] text-lg px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
-                <Link to="/contact">
+                <Link to="https://forms.gle/Qdjgy9VvgF54sGpG9">
                   お問い合わせはこちら
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>

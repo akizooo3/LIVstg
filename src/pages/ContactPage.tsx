@@ -1,18 +1,17 @@
-import React, { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
-import { Button } from '../components/ui/button';
-import { Input } from '../components/ui/input';
-import { Textarea } from '../components/ui/textarea';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select';
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ContactPage: React.FC = () => {
-  // ... (既存のコード)
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    window.location.href = 'https://forms.gle/Qdjgy9VvgF54sGpG9';
+  }, []);
 
   return (
-    <div className="bg-white text-gray-800 font-sans">
-      <main className="pt-16">
-        {/* ... (既存のセクション) */}
-      </main>
+    <div>
+      <h1>お問い合わせ</h1>
+      <p>お問い合わせフォームにリダイレクトしています...</p>
     </div>
   );
 };

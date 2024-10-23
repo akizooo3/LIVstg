@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
             <h3 className="font-semibold text-lg mb-4 text-white">お問い合わせ</h3>
             <p className="text-base text-gray-100 mb-4">お気軽にお問い合わせください。</p>
             <Button asChild className="bg-white text-[#37DC94] hover:bg-[#FF5126] hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#37DC94] transition-all duration-300 transform hover:scale-105">
-              <Link to="/contact">お問い合わせフォーム</Link>
+              <Link to="https://forms.gle/Qdjgy9VvgF54sGpG9">お問い合わせフォーム</Link>
             </Button>
           </div>
         </div>

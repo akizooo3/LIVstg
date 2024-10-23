@@ -113,7 +113,7 @@ const BusinessPage: React.FC = () => {
               事業内容に関するご質問やお見積もりのご依頼など、お気軽にお問い合わせください。
             </p>
             <Button asChild className="bg-[#37DC94] text-white hover:bg-[#FF5126] focus:ring-2 focus:ring-[#37DC94] focus:ring-offset-2 text-lg px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
-              <Link to="/contact">
+              <Link to="https://forms.gle/Qdjgy9VvgF54sGpG9">
                 お問い合わせはこちら
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
+import yamauchi from '../images/yamauchi.jpg';
 
 const CompanyPage: React.FC = () => {
   const visionRef = useRef<HTMLElement>(null);
@@ -23,7 +24,7 @@ const CompanyPage: React.FC = () => {
                   人が輝けるモノ作りを目指して
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-100 md:text-xl lg:text-2xl drop-shadow-md animate-fade-in-up animation-delay-300">
-                  LIVソフトは、お客様のビジネスを支えるために、システム開発やインフラ設計を通じて革新的なソリューションを提供しています。私たちの目標は、技術でお客様の課題を解決し、成功に導くことです。
+                  LIVソフトは、お客様のビジネスを支えるために、システム開発やインフラ設計を通じて革新的なソリューションを提供してい���す。私たちの目標は、技術でお客様の課題を解決し、成功に導くことです。
                 </p>
               </div>
               <Button onClick={scrollToVision} className="mt-8 bg-white text-[#37DC94] hover:bg-[#FF5126] hover:text-white transition-all duration-300 transform hover:scale-105 animate-fade-in-up animation-delay-600">
@@ -57,8 +58,7 @@ const CompanyPage: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center md:items-start gap-8 animate-fade-in animation-delay-300">
               <div className="md:w-1/3 flex justify-center">
                 <div className="relative w-64 h-64 overflow-hidden rounded-lg shadow-lg">
-                  <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/yamauchi-Xik9n4hVh5VTW8lj9rqwcTEb6RRNA4.jpg"
+                <img src={yamauchi}
                     alt="山内直樹 代表取締役"
                     className="w-full h-full object-cover object-top transition-transform duration-300 hover:scale-105"
                   />
@@ -131,7 +131,7 @@ const CompanyPage: React.FC = () => {
                 お客様のニーズに合わせた最適なソリューションをご提案いたします。
               </p>
               <Button asChild className="bg-[#37DC94] text-white hover:bg-[#FF5126] transition-all duration-300 transform hover:scale-105">
-                <Link to="/contact">お問い合わせフォームへ</Link>
+                <Link to="https://forms.gle/Qdjgy9VvgF54sGpG9">お問い合わせフォームへ</Link>
               </Button>
             </div>
           </div>
