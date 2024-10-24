@@ -24,7 +24,7 @@ const CompanyPage: React.FC = () => {
                   人が輝けるモノ作りを目指して
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-100 md:text-xl lg:text-2xl drop-shadow-md animate-fade-in-up animation-delay-300">
-                  LIVソフトは、お客様のビジネスを支えるために、システム開発やインフラ設計を通じて革新的なソリューションを提供してい���す。私たちの目標は、技術でお客様の課題を解決し、成功に導くことです。
+                  LIVソフトは、お客様のビジネスを支えるために、システム開発やインフラ設計を通じて革新的なソリューションを提供しています。私たちの目標は、技術でお客様の課題を解決し、成功に導くことです。
                 </p>
               </div>
               <Button onClick={scrollToVision} className="mt-8 bg-white text-[#37DC94] hover:bg-[#FF5126] hover:text-white transition-all duration-300 transform hover:scale-105 animate-fade-in-up animation-delay-600">
